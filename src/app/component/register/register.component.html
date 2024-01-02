@@ -1,0 +1,36 @@
+<nav>
+    <ul>
+      <li><a href="home">Home</a></li>
+    </ul>
+  </nav>
+
+<div class="container-fluid">
+    <div class="row mt-5 justify-content-center align-items-center" style="height: 70vh;">
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow">
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <h4 class="text-dark text-muted">Register</h4>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" placeholder="Enter email" name="email" [(ngModel)]="email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="password">
+              </div>
+              <button type="submit" class="btn btn-info" (click)="register()">Register</button>
+              <div class="row mt-3">
+                <div class="col-md-6">
+                  <p>Have an account? <a href="/login" class="text-danger" style="text-decoration: none;">Login</a> </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

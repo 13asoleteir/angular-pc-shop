@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* CSS for main section */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Adjust the width as desired */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(3, 3, 3, 0.5)), url('/assets/bg-home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  
+  
+  .intro h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .intro p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin: 20px 100px; /* Add left and right margins */
+    text-align: center;
+
+  }
+  
+  .intro button {
+    background-color: #db7420;
+    color: black;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(236, 111, 8, 0.452)
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .container img {
+    width: 50%;
+    height: auto;
+    margin: 10px; /* Add margin to create spacing around the image */
+  }
+  
+  .container .content {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .container h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: #db7420;
+  }
+  
+  .container p {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  /* Media queries for responsive adjustments */
+@media screen and (max-width: 768px) {
+    .intro {
+      height: 80vh;
+    }
+  
+    .intro h1 {
+      font-size: 70px;
+    }
+  
+    .intro p {
+      font-size: 20px;
+      margin: 20px 30px;
+    }
+
+    .container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center;
+      }
+    
+      .container img {
+        width: 50%; /* Adjust image width to fit container */
+      }
+    
+      .container h1 {
+        font-size: 50px; /* Reduce heading font size */
+      }
+    }
+

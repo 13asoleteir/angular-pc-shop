@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <div>
+        <img src="./assets/computer.png" alt="Navbar" width="64" height="64">
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item-solo">
+            <a class="nav-link active nav-link-big nav-link-pc" aria-current="page">PC PARTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-link-big" aria-current="page" routerLink="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-link-big" routerLink="/product">Products</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" *ngIf="!isLoggedIn()">
+            <a class="nav-link" routerLink="/login">Login</a>
+          </li>
+          <li class="nav-item" *ngIf="!isLoggedIn()">
+            <a class="nav-link" routerLink="/register">Register</a>
+          </li>
+          <li class="nav-item" *ngIf="isLoggedIn()">
+            <button class="btn btn-link nav-link logout-button" (click)="logout()">Logout</button>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  
+  

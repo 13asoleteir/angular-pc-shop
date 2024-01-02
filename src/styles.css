@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('/assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9; /* Adjust the opacity value as desired */
+}
+
+
+
+
+
+
+/* You can add global styles to this file, and also import other style files */
